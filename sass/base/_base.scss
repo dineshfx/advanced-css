@@ -9,12 +9,34 @@
 html{
 
     /* font-size: 10px; root font size */
-    //defines what 1rem is
+    //defines what 1rem is |  1rem =10px; 10px/16px = 62.5%
     font-size: 62.5%;
+
+  //Always the larger ones before the smaller ones  
+ 
+    @include  respond(tab-land){ //width less than 1200?
+        font-size: 56.25%;
+    }
+    @include  respond(tab-port){ //width less than 900?
+        font-size: 50%;
+    }
+    @include  respond(big-desktop){
+        font-size: 75%;
+    }
     
 }
 
 body{
    
     box-sizing: border-box;
+    padding: 3rem;
+    @include  respond(tab-port){ 
+      padding: 0;
+    }
+
+}
+
+::selection{
+    background-color: $color-primary;
+    color: $color-white;
 }
