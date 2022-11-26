@@ -933,6 +933,9 @@ body {
   @media only screen and (max-width: 56.25em) {
     .section-about {
       padding: 20rem 0; } }
+  @media only screen and (max-width: 37.5em) {
+    .section-about h2 {
+      padding: 0rem .5rem 0rem .5rem; } }
 
 .section-features {
   padding: 20rem 0;
@@ -960,6 +963,9 @@ body {
   @media only screen and (max-width: 56.25em) {
     .section-stories {
       padding: 10rem 0; } }
+  @media only screen and (max-width: 37.5em) {
+    .section-stories h2 {
+      padding: 0rem .5rem 0rem .5rem; } }
 
 .section-book {
   padding: 15rem 0;

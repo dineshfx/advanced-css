@@ -4,9 +4,17 @@
     margin-top: -20vh;
 
     @include respond(tab-port){
-        padding: 20rem 0;
-         
+        padding: 20rem 0;  
     }
+
+    h2{
+        @include respond(phone){
+            padding:0rem .5rem 0rem .5rem; 
+    
+        }
+    }
+
+   
 
 }
 
@@ -52,6 +60,12 @@
     @include respond(tab-port){
         padding: 10rem 0;
          
+    }
+    h2{
+        @include respond(phone){
+            padding:0rem .5rem 0rem .5rem; 
+    
+        }
     }
    
 }
